@@ -16,7 +16,7 @@ nav {
     top: 0;
     margin: 0% auto;
     background-color: white;
-    font-size: 18pt;
+    font-size: 15pt;
 }
 
 .logo {
@@ -60,7 +60,6 @@ nav {
 
  .left {
     width: 50%;
-    margin: 10%;
     align-items: center;
     justify-content: center;
  }
