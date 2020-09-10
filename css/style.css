@@ -1,11 +1,19 @@
 body {
     background-color: whitesmoke;
     font-family: 'Oxygen', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 h1  {
     font-size: 30pt;
 }
+
+h4 {
+    line-height: 0;
+}
+
+/* Navigation */
 
 nav {
     display: flex;
@@ -49,29 +57,38 @@ nav {
     margin: 0 auto;
 }
 
+/* About Me */
+
 .aboutmeContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     border-style: solid;
     border-width: 150px;
+    border-top-width: 200px;
+    border-bottom-width: 200px;
     border-color: #6EABFF;
     background-color: whitesmoke;
+    margin: auto;
 }
 
- .left {
+ .right {
     width: 50%;
-    align-items: center;
     justify-content: center;
-    margin: 10%;
+    margin: auto;
+    padding-right: 90px;
  }
 
- .left p {
+ .right p {
      font-size: 15pt;
  }
 
- .right {
+ .left {
      margin: 10%;
      align-items: center;
+ }
+
+ .propic {
+     padding-top: 30px;
  }
 
 .resume {
@@ -83,6 +100,7 @@ nav {
     text-align: center;
     text-decoration: none;
     padding: 10px 15px;
+    margin-top: 20px;
 }
 
 .resume:hover {
@@ -102,9 +120,105 @@ nav {
      height: 25px;
  }
 
+/* My Work */
+
+ .mywork {
+    justify-content: center;
+    border-style: solid;
+    border-width: 150px;
+    border-top-width: 200px;
+    border-bottom-width: 200px;
+    border-color: #FC8686;
+    background-color: whitesmoke;
+    margin: auto;
+}
+
+.myworkContainer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 400px;
+    grid-template-rows: 275px 450px;
+    grid-template-areas: 
+    'ESI ESI ESI ESI'
+    'mentormatch mentormatch usda usda';
+    padding: 100px 100px 100px 100px;
+    justify-content: space-evenly;
+}
+
+.myworkContainer div {
+    padding: 20px;
+}
+
+.ESI {
+    grid-area: ESI;
+    padding-right: 250px;
+    border: #6EABFF;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.ESI img {
+    float: left; 
+    padding-right: 50px;
+    padding-left: 30px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+}
+
+.ESI h3 {
+    padding-top: 40px;
+}
+
+.ESI p {
+    padding-right: 30px;
+}
+
+.mentormatch {
+    grid-area: mentormatch;
+    border: #6EABFF;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.mentormatch img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+
+.mentormatch .h3, .h4, .p {
+    padding-left: 30px;
+}
+
+.usda {
+    grid-area: usda;
+    border: #6EABFF;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.usda h3, .h4, .p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.usda img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 18px;
+    padding-bottom: 30px;
+}
+
+/* Footer */
+
  footer {
-     margin: 10%;
-     align-items: center;
+     padding-top: 8px;
+     padding-bottom: 8px;
+    margin: 10%;
+    align-items: center;
  }
 
 footer p {
@@ -117,4 +231,60 @@ a {
 }
 a:hover {
     color: #6EABFF;
+}
+
+.icon {
+    display: inline-block;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        justify-content: flex;
+        align-items: center;
+        max-height: 90px;
+        max-width: 600px;
+        position: sticky;
+        top: 0;
+        margin: auto;
+        background-color: white;
+        font-size: 8pt;
+        text-align: center;
+    }
+
+    .aboutmeContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-style: solid;
+        border-width: 25px;
+        border-top-width: 70px;
+        border-bottom-width: 70px;
+        border-color: #6EABFF;
+        background-color: whitesmoke;
+        padding-bottom: 50px;
+    }
+
+    .mywork {
+        justify-content: space-evenly;
+        border-style: solid;
+        border-width: 25px;
+        border-top-width: 70px;
+        border-bottom-width: 70px;
+        border-color: #FC8686;
+        background-color: whitesmoke;
+    }
+    
+
+    .myworkContainer {
+        grid-template-rows: 500px 500px 500px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'ESI'
+        'mentormatch'
+        'usda';
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
