@@ -4,52 +4,54 @@
     <title>Aileen Nam's Portfolio</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <meta charset="UTF-8">
 </head>
 <body>
     <nav>
         <div class="logo">
             <img src="images/logo.png" width="75px" height="75px">
-            <p>Aileen Nam</p>
+            <p><a href="#hero" class="slide-selection">Aileen Nam</a></p>
         </div>
         <div class="navigation">
             <ul>
-                <li>About Me</li>
-                <li>My Work</li>
-                <li>Say Hi</li>
+                <li><a href="#about" class="slide-selection">About Me</a></li>
+                <li><a href="#work" class="slide-selection">My Work</a></li>
+                <li><a href="#contact" class="slide-selection">Say Hi</a></li>
             </ul>
         </div>
     </nav>
-    </header>
-    <section class="heroImg">
-        <div class="content">
-            <img src="images/hero.png" alt="name tags" width="100%">
-        </div>
+    <section id="hero">
+            <img class="heroImg" src="images/hero.png" alt="" width="95%">
     </section>
-    <section class="aboutmeContainer">
+    <section class="aboutmeContainer" id="about">
         <div class="left">
             <img class="propic" src="images/propic.jpeg" alt="my picture" width="400px" height="500px">
         </div>
         <div class="right">
-            <h1 class="aboutme"><strong>HELLO! <br>My name is Aileen.</strong></h1>
-            <p class="aboutme">I’m a Korean-American UX/UI designer 
-                currently living in: <br><s>Philly</s> 
-                <br><s>Seoul</s> 
-                <br>the DMV area. 
-                <br>
-                <br>
+            <img src="images/Group 1.svg" alt="" width="400px">
+            <p class="aboutme">I’m a
+                    <td>&#127472;&#127479;
+                    <td>&#x1F1FA;&#x1F1F8;
+            UX/UI designer currently living in: <br><s>Philly</s> 
+            <br><s>Seoul</s> 
+            <br>the DC area. 
+            <br>
+            <br>
                 Like myself, I acknowledge that people 
                 come from different backgrounds and 
                 experiences. I love meeting new people
                 and listening to their stories. That’s why I
-                aspire to work with all people to create
-                products for all people.</p>
+                aspire to work to create
+                products and experiences that improve the lives of all people.</p>
             <button class="resume">Download Resume</button>
-            </div>
+        </div>
     </section>
-    <section class="mywork">
+    <section class="mywork" id="work">
         <div class="myworkContainer">
             <div class="ESI">
-                <img src="images/ESI.png" alt="" width="300px" height="200px">
+                <img src="images/ESI.png" alt="" width="350px" height="300px">
                 <h3>ESI Website Redesign</h3>
                 <h4>Non-Profit Organization Website Redesign</h4>
                 <p>Redesigning the UX and UI elements of an NPO website to raise more awareness to their cause and increase the number of supporters.</p>
@@ -70,18 +72,16 @@
             </div>
         </div>
     </section>
-    <footer>
-        <h1 class="contact">Feel free to get in touch with any opportunities,
-            <br>or to just say hi!
+    <section>
+        <h1 class="contact" id="contact">Feel free to get in touch with any opportunities, or to just say &#128075; !
         </h1>
         <br>
         <p class="contact"><a href="mailto:aileen.nam@gmail.com">aileen.nam@gmail.com</a></p>
         <br>
         <img class="icon" src="images/linkedin.png" alt="linkedin logo">
         <img class="icon" src="images/medium.png" alt="meduim logo">
-        <br>
-        <br>
-        <br>
+    </section>
+    <footer>
         <p>&copy; Aileen Nam 2020</p>
     </footer>
 </body>
