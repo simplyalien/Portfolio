@@ -7,7 +7,5 @@ $("document").ready("function"() {
         $("html, body").animate({
             scrollTop: $("linkhref").offest().top
         });
-
-        e.preventDefault();
     });
 });
