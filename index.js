@@ -1,11 +1,3 @@
-$("document").ready("function"() {
-
-    $(".slide-selection).click("function"() {
-
-        var linkhref = $("this").attr("href");
-
-        $("html, body").animate({
-            scrollTop: $("linkhref").offest().top
-        });
-    });
+$(".resume").on("click", function(){
+    alert("You have downloaded my resume!");
 });
